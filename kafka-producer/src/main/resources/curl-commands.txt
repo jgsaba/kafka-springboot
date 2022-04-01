@@ -1,0 +1,9 @@
+
+@POST /library/v1/event
+curl -i \
+-d '{"libraryEventType": "NEW", "book":{"name":"aa", "author":"aa"}}' \
+-H "Content-Type: application/json" \
+-X POST http://localhost:8081/library/v1/event
+
+@GET /shop
+curl http://localhost:8081/shop -i
